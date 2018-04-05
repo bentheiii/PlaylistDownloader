@@ -1,0 +1,15 @@
+1. create an ini file in the destination folder (you can copy _example.ini as a start)
+2. edit it as you like
+	2.1 source: the source url of the playlist
+	2.2 destination: where to put downloaded songs (. means current directory)
+	2.3 startIndex: the first n songs will be skipped
+	2.4 blacklist: path to the blacklist file (make sure it exists in step 3)
+	2.5 extension: the extension format of the downloaded videos (m4a for audio and wav for video is recommended)
+	2.6 mode: the mode for the download (either video or audio)
+	2.7 rules: what to do in the following cases (can be either skip, do, ask, y (ask with the default being yes), or n(as with the default being n))
+		2.7.1 default: what to do if no other rule applies
+		2.7.2 exists: what to do if a file of the same name already exists
+		2.7.3: blacklisted: what to do if the video is blacklisted (has been skipped in a previous run)
+3. make sure a blacklist file exists (you can start it as blank)
+4. run PlaylistDownloader.exe
+5. paste the ini path and click enter
